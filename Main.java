@@ -69,7 +69,7 @@ class Campeonato {
             mandante.empatar();
             visitante.empatar();
         }
-
+        System.out.println("PARTIDA:");
         System.out.println(mandante.getNome() + " " + golsMandante + " x " + golsVisitante + " " + visitante.getNome());
     }
 
@@ -83,8 +83,9 @@ class Campeonato {
         });
 
         StringBuilder sb = new StringBuilder();
-
-        sb.append("Classificação Geral do Campeonato:\n");
+        sb.append("==================================================\n");
+        sb.append( "CLASSIFICAÇÃO DO CAMPEONATO" + "\n");
+        sb.append("==================================================\n");
 
         for (int i = 0; i < clubes.size(); i++) {
             sb.append(i + 1).append(". ");
@@ -109,9 +110,11 @@ public class Main {
         clubes.add(new Clube("Ciencias da Computação"));
         clubes.add(new Clube("Engenharia Cívil"));
         clubes.add(new Clube("Engenharia de Materiais"));
+
         Campeonato campeonato = new Campeonato(clubes);
         campeonato.jogarCampeonato();
         System.out.println(campeonato.getClassificacao());
-        System.out.println("O campeão é: " + campeonato.getCampeao().getNome());
+        
+        System.out.println("\033[32m" + campeonato.getCampeao().getNome() + " é o vencedor do campeonato!\033[0m");
     }
 }
