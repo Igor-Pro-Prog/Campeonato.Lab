@@ -106,8 +106,8 @@ class Campeonato {
 public class Main {
     public static void main(String[] args) {
         ArrayList<Clube> clubes = new ArrayList<>();
-        clubes.add(new Clube("Matematica Computacional"));
-        clubes.add(new Clube("Ciencias da Computação"));
+        clubes.add(new Clube("Matemática Computacional"));
+        clubes.add(new Clube("Ciência da Computação"));
         clubes.add(new Clube("Engenharia Cívil"));
         clubes.add(new Clube("Engenharia de Materiais"));
 
