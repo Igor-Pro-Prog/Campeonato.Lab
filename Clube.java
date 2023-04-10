@@ -34,12 +34,10 @@ class Clube {
         this.saldoGols -= saldoGols;
     }
 
-	public Object getGolsMarcados() {
+    public Object getGolsMarcados() {
 
         return null;
-
-
-	}
+    }
     public Object getGolsSofridos() {
         return null;
     }
